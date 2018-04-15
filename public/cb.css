@@ -1,0 +1,96 @@
+div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+        left: 50%;
+        margin-left: -512px; }
+}
+
+#reply { 
+    position: relative; 
+    max-height:350px;
+    overflow-y:auto;
+    margin: 50px auto; 
+    padding: 50px;
+    width: 800px;
+}
+
+#gg { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+p { 
+    font: 15px/2 Georgia, Serif; 
+    margin: 0 0 30px 0; 
+    text-indent: 40px; 
+}
+
+#footer {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    font-size:12px;
+    height:25px;
+    padding-bottom: 40px;
+}
+
+small {
+    color: grey;
+}
+
+.bg-4 { 
+    position: relative;
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+/* Chat containers */
+#chb {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 5px 30px;
+    width: 300px;
+    text-align: left;
+}
+
+/* Darker chat container */
+#chh {
+    border-color: #ccc;
+    background-color: #A9A9A9;
+    border-radius: 5px;
+    width : 300px;
+    padding-right: 50px;
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
